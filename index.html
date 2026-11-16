@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================================
+          DOMAIN CONSOLIDATION (.IN -> .COM) & GA4 ANALYTICS
+    ====================================================================== -->
+    <script>
+      if (window.location.hostname === 'traversiq.in' || window.location.hostname === 'www.traversiq.in') {
+          window.location.replace('https://traversiq.com' + window.location.pathname + window.location.search + window.location.hash);
+      }
+      // Old single-page links (traversiq.com/#us-visa etc.) now forward to the real page URLs.
+      (function () {
+          var legacy = {
+              '#us-visa': '/us-visa/', '#global-visas': '/global-visas/',
+              '#passport-services': '/passport-services/', '#passport': '/passport-services/',
+              '#flights-holidays': '/flights-holidays/', '#flights': '/flights-holidays/'
+          };
+          var target = legacy[window.location.hash];
+          if (target && window.location.pathname !== target) window.location.replace(target);
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) - GA4 (Stream ID: 16205322620) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SVKHEMNLL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4SVKHEMNLL');
+    </script>
+
+    <!-- =====================================================================
+          PER-PAGE SEO TAGS (filled in by _source/build.py for each URL)
+    ====================================================================== -->
+    <title>Traversiq Global | US Visas, Passports &amp; Tours — Panvel</title>
+    <meta name="description" content="Direct US F1 &amp; B1/B2 visa interview prep, Schengen &amp; global visas, Passport &amp; Tatkaal desk, and custom holidays in Taloja, Panvel, Navi Mumbai.">
+    <link rel="canonical" href="https://traversiq.com/">
+    <meta name="author" content="Shubham Madhavi">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0B1F3A">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- OPEN GRAPH + TWITTER CARD (matched with title & description) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Traversiq Global">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:url" content="https://traversiq.com/">
+    <meta property="og:title" content="Traversiq Global | US Visas, Passports &amp; Tours — Panvel">
+    <meta property="og:description" content="Direct US F1 &amp; B1/B2 visa interview prep, Schengen &amp; global visas, Passport &amp; Tatkaal desk, and custom holidays in Taloja, Panvel, Navi Mumbai.">
+    <meta property="og:image" content="https://traversiq.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Traversiq Global | US Visas, Passports &amp; Tours — Panvel">
+    <meta name="twitter:description" content="Direct US F1 &amp; B1/B2 visa interview prep, Schengen &amp; global visas, Passport &amp; Tatkaal desk, and custom holidays in Taloja, Panvel, Navi Mumbai.">
+    <meta name="twitter:image" content="https://traversiq.com/og-image.jpg">
+
+    <!-- =====================================================================
+          GOOGLE LOCAL BUSINESS SCHEMA (JSON-LD)
+    ====================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "@id": "https://traversiq.com/#business",
+      "name": "Traversiq Global",
+      "alternateName": "Traversiq Visa & Travel Desk",
+      "url": "https://traversiq.com/",
+      "logo": "https://traversiq.com/brand-logo.jpg",
+      "image": "https://traversiq.com/brand-logo.jpg",
+      "hasMap": "https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA",
+      "sameAs": [
+        "https://www.instagram.com/traversiq_global/"
+      ],
+      "description": "Independent US F1 & B1/B2 visa preparation, DS-160 review, Schengen & Dubai tourist visas, Indian Passport & Tatkaal assistance, flight ticketing, and custom holidays in Taloja, Panvel, Navi Mumbai.",
+      "telephone": "+919324666369",
+      "email": "shubham@traversiq.com",
+      "priceRange": "₹₹",
+      "founder": {
+        "@type": "Person",
+        "name": "Shubham Madhavi",
+        "alumniOf": "Pace University, New York"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ISP 10, Plot No. 88, Near CNG Pump, Opposite Aditya Birla, Taloja",
+        "addressLocality": "Panvel, Navi Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "410208",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.9894,
+        "longitude": 73.1175
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Taloja" },
+        { "@type": "City", "name": "Panvel" },
+        { "@type": "City", "name": "Navi Mumbai" },
+        { "@type": "City", "name": "Kharghar" },
+        { "@type": "City", "name": "Kamothe" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:30",
+          "closes": "21:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN (build.py swaps this for /assets/site.css once that file exists) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Libre Baskerville + Plus Jakarta Sans + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FAF8F3',       // Warm background
+                        navy: '#0B1F3A',        // Deep Navy
+                        navyLight: '#16325B',   // Hover Navy
+                        gold: '#C59B27',        // Accent Gold
+                        goldLight: '#FBF6E8',   // Soft Gold tint
+                        crimson: '#C8102E',     // Accent Crimson
+                        whatsapp: '#15803D'     // WhatsApp Green CTA
+                    },
+                    fontFamily: {
+                        serif: ['Libre Baskerville', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF8F3;
+            color: #0F172A;
+            overflow-x: hidden;
+        }
+        .service-btn-active {
+            background-color: #0B1F3A !important;
+            color: #FFFFFF !important;
+            border-color: #0B1F3A !important;
+            box-shadow: 0 2px 6px rgba(11, 31, 58, 0.18);
+        }
+        .service-btn-active i {
+            color: #FCD34D !important;
+        }
+        .logo-medallion-crop {
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.18);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Windows-compatible country code pill badge */
+        .code-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2px 5px;
+            border-radius: 4px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-navy selection:text-white pb-20 md:pb-0" data-service="US F1 / B1-B2 Visa &amp; Interview Prep" data-dest="">
+
+    <!-- =====================================================================
+          SINGLE CONSISTENT HEADER NAVIGATION
+          Adjusted sizing and spacing so all navigation links and CTA buttons
+          fit comfortably within standard desktop viewports at 100% zoom.
+    ====================================================================== -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-3 sm:px-5 lg:px-6">
+            <div class="flex items-center justify-between gap-2 xl:gap-4 h-20">
+
+                <!-- Brand Logo + Title -->
+                <a href="/" class="flex items-center gap-2.5 focus:outline-none group shrink-0">
+                    <div class="w-10 h-10 xl:w-11 xl:h-11 rounded-full overflow-hidden border-2 border-gold shadow-sm bg-navy shrink-0 flex items-center justify-center">
+                        <img src="/brand-logo.jpg"
+                             alt="" width="44" height="44" decoding="async"
+                             class="w-full h-full logo-medallion-crop"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="hidden w-full h-full items-center justify-center text-white font-serif font-bold text-base">
+                            TQ
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center">
+                            <span class="font-serif font-bold text-sm sm:text-base xl:text-lg text-navy tracking-tight whitespace-nowrap">TRAVERSIQ GLOBAL</span>
+                        </div>
+                        <p class="text-[10px] xl:text-[11px] text-slate-600 font-medium hidden sm:block whitespace-nowrap">
+                            US &amp; Global Visas • Passports • Flights &amp; Tours
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Single Consistent Desktop Navigation -->
+                <nav aria-label="Main Navigation" class="hidden lg:flex items-center gap-2 xl:gap-3.5 text-[11px] xl:text-[13px] font-semibold text-slate-700 whitespace-nowrap">
+                    <a href="/" data-nav="home" aria-current="page" class="nav-tab text-navy border-b-2 border-gold pb-1 transition-colors">Overview</a>
+                    <a href="/us-visa/" data-nav="us-visa" class="nav-tab hover:text-navy pb-1 transition-colors flex items-center gap-1">
+                        <span class="code-badge bg-navy text-amber-300">US</span>
+                        <span>US Visas</span>
+                    </a>
+                    <a href="/global-visas/" data-nav="global-visas" class="nav-tab hover:text-navy pb-1 transition-colors flex items-center gap-1">
+                        <span class="code-badge bg-slate-200 text-navy">GLB</span>
+                        <span>Global Visas</span>
+                    </a>
+                    <a href="/passport-services/" data-nav="passport" class="nav-tab hover:text-navy pb-1 transition-colors flex items-center gap-1">
+                        <span class="code-badge bg-slate-200 text-navy">IN</span>
+                        <span>Passports</span>
+                    </a>
+                    <a href="/flights-holidays/" data-nav="flights" class="nav-tab hover:text-navy pb-1 transition-colors">Flights &amp; Tours</a>
+                    <a href="#reviews-proof" class="hover:text-navy pb-1 transition-colors">Case Studies</a>
+                    <a href="#founder" class="hover:text-navy pb-1 transition-colors">About</a>
+                </nav>
+
+                <!-- Primary CTA Buttons -->
+                <div class="hidden sm:flex items-center gap-1.5 xl:gap-2 shrink-0 lg:pl-2.5 xl:pl-3.5 lg:border-l lg:border-slate-200">
+                    <button type="button" onclick="openBookingModal('Visa or Travel Consultation')"
+                            class="px-2.5 xl:px-3 py-2 rounded-lg bg-navy hover:bg-navyLight text-white text-[11px] xl:text-xs font-bold flex items-center gap-1.5 transition-colors shadow-sm whitespace-nowrap">
+                        <i class="fa-regular fa-calendar-check text-amber-300"></i>
+                        <span>Request Consultation</span>
+                    </button>
+                    <a href="https://wa.me/919324666369?text=Hi%20Shubham%2C%20I%20visited%20traversiq.com%20and%20need%20help%20with%20a%20visa%2C%20passport%2C%20or%20travel%20plan."
+                       target="_blank" rel="noopener noreferrer"
+                       class="bg-whatsapp hover:bg-emerald-800 text-white text-[11px] xl:text-xs font-bold px-2.5 xl:px-3 py-2 rounded-lg shadow-sm flex items-center gap-1.5 transition-colors whitespace-nowrap">
+                        <i class="fa-brands fa-whatsapp text-sm xl:text-base"></i>
+                        <span>WhatsApp Desk</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" aria-label="Open Menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-lg border border-slate-200 text-navy">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown (Using SVG/FontAwesome icons instead of broken Windows flag emojis) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-2 pb-5 space-y-2 shadow-lg">
+            <a href="/" class="mobile-link flex items-center gap-2.5 py-2.5 border-b border-slate-100 text-sm font-bold text-navy">
+                <i class="fa-solid fa-compass text-gold w-5 text-center"></i>
+                <span>Overview &amp; All Service Desks</span>
+            </a>
+            <a href="/us-visa/" class="mobile-link flex items-center gap-2.5 py-2.5 border-b border-slate-100 text-sm font-semibold text-navy">
+                <span class="code-badge bg-navy text-amber-300">US</span>
+                <span>US F1 &amp; B1/B2 Interview Prep</span>
+            </a>
+            <a href="/global-visas/" class="mobile-link flex items-center gap-2.5 py-2.5 border-b border-slate-100 text-sm font-semibold text-navy">
+                <span class="code-badge bg-slate-200 text-navy">EU/UAE</span>
+                <span>Schengen, UAE &amp; Global Visas</span>
+            </a>
+            <a href="/passport-services/" class="mobile-link flex items-center gap-2.5 py-2.5 border-b border-slate-100 text-sm font-semibold text-navy">
+                <span class="code-badge bg-slate-200 text-navy">IN</span>
+                <span>Indian Passport &amp; Tatkaal Desk</span>
+            </a>
+            <a href="/flights-holidays/" class="mobile-link flex items-center gap-2.5 py-2.5 border-b border-slate-100 text-sm font-semibold text-navy">
+                <i class="fa-solid fa-plane-departure text-navy w-5 text-center"></i>
+                <span>Flights &amp; Custom Holiday Packages</span>
+            </a>
+            <a href="#reviews-proof" class="mobile-link flex items-center gap-2.5 py-2.5 border-b border-slate-100 text-sm font-semibold text-navy">
+                <i class="fa-solid fa-star text-amber-500 w-5 text-center"></i>
+                <span>Case Studies &amp; Google Reviews</span>
+            </a>
+            <a href="#founder" class="mobile-link flex items-center gap-2.5 py-2.5 text-sm font-semibold text-navy">
+                <i class="fa-solid fa-user-tie text-navy w-5 text-center"></i>
+                <span>About Shubham &amp; Panvel Office</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+          HERO SECTION + STREAMLINED CONSULTATION DESK
+          Each URL is built with exactly one hero below, which carries that page's single H1 heading.
+    ====================================================================== -->
+    <main>
+        <section class="py-10 md:py-16 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+                    <!-- LEFT 7 COLUMNS: Dynamic Per-Page Hero Content -->
+                    <div class="lg:col-span-7 lg:sticky lg:top-28">
+
+                        <!-- =====================================================
+                              HERO 1: HOME HUB (home page H1)
+                        ====================================================== -->
+<div data-page-hero="home" class="space-y-6">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-goldLight border border-gold/50 text-navy text-xs font-semibold">
+                                    <span>Led by Shubham Madhavi • MS, Pace University (New York)</span>
+                                </div>
+                                <a href="#reviews-proof" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white border border-slate-200 text-xs font-bold text-navy shadow-sm hover:border-gold">
+                                    <span class="text-amber-500">★★★★★</span>
+                                    <span>5.0 Google Rated • Panvel</span>
+                                </a>
+                            </div>
+
+                            <h1 class="font-serif text-3xl sm:text-5xl text-navy font-bold leading-[1.18]">
+                                US &amp; Global Visas, Passports, and Custom Holidays—<span class="text-crimson italic font-normal">Guided Personally from Start to Finish.</span>
+                            </h1>
+
+                            <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                                At <strong>Traversiq Global</strong> in Taloja, Panvel, you work directly with <strong>Shubham Madhavi</strong> for US F1 &amp; B1/B2 consular interview preparation, Schengen &amp; global tourist filings, Indian Passport &amp; Tatkaal assistance, and custom international or domestic holiday packages.
+                            </p>
+
+                            <!-- Trust Badges Strip -->
+                            <div class="grid grid-cols-3 gap-2.5 pt-1">
+                                <div class="bg-white px-3.5 py-2.5 rounded-lg border border-slate-200 flex items-center gap-2.5 shadow-sm">
+                                    <i class="fa-solid fa-user-check text-navy text-base"></i>
+                                    <div>
+                                        <p class="text-xs font-bold text-navy leading-tight">Direct Desk</p>
+                                        <p class="text-[11px] text-slate-500">Personal File Review</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white px-3.5 py-2.5 rounded-lg border border-slate-200 flex items-center gap-2.5 shadow-sm">
+                                    <i class="fa-solid fa-graduation-cap text-crimson text-base"></i>
+                                    <div>
+                                        <p class="text-xs font-bold text-navy leading-tight">US Alumni</p>
+                                        <p class="text-[11px] text-slate-500">MS, Pace Univ. NYC</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white px-3.5 py-2.5 rounded-lg border border-slate-200 flex items-center gap-2.5 shadow-sm">
+                                    <i class="fa-solid fa-location-dot text-amber-600 text-base"></i>
+                                    <div>
+                                        <p class="text-xs font-bold text-navy leading-tight">Panvel &amp; Zoom</p>
+                                        <p class="text-[11px] text-slate-500">In-Office or Online</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick-Select Service Pills (Windows-safe badges) -->
+                            <div class="pt-1">
+                                <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5">
+                                    Select a specialized desk to view checklists &amp; transparent fees:
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <a href="/us-visa/"
+                                            class="px-3.5 py-2 rounded-lg bg-navy text-white hover:bg-navyLight border border-navy text-xs font-semibold shadow-sm transition-colors flex items-center gap-2">
+                                        <span class="code-badge bg-amber-300 text-navy">US</span>
+                                        <span>US Visa (F1 / B1-B2 &amp; Mock Prep)</span>
+                                    </a>
+                                    <a href="/global-visas/"
+                                            class="px-3.5 py-2 rounded-lg bg-white hover:bg-navy hover:text-white border border-slate-300 text-xs font-semibold text-slate-800 shadow-sm transition-colors flex items-center gap-2">
+                                        <span class="code-badge bg-slate-200 text-navy">EU/UAE</span>
+                                        <span>Schengen, UAE, UK &amp; Global Visas</span>
+                                    </a>
+                                    <a href="/passport-services/"
+                                            class="px-3.5 py-2 rounded-lg bg-white hover:bg-navy hover:text-white border border-slate-300 text-xs font-semibold text-slate-800 shadow-sm transition-colors flex items-center gap-2">
+                                        <span class="code-badge bg-slate-200 text-navy">IN</span>
+                                        <span>Passport &amp; Tatkaal Desk (Panvel)</span>
+                                    </a>
+                                    <a href="/flights-holidays/"
+                                            class="px-3.5 py-2 rounded-lg bg-white hover:bg-navy hover:text-white border border-slate-300 text-xs font-semibold text-slate-800 shadow-sm transition-colors flex items-center gap-2">
+                                        <i class="fa-solid fa-plane text-crimson"></i>
+                                        <span>Student Flights &amp; Custom Tours</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+                                <div class="bg-white p-4 rounded-lg border border-slate-200 border-t-4 border-t-navy shadow-sm">
+                                    <p class="font-bold text-sm text-navy">1. Genuine Document Review</p>
+                                    <p class="text-xs text-slate-600 mt-1">We review your genuine financial records, sponsor documents, and IDs before you pay embassy fees.</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg border border-slate-200 border-t-4 border-t-gold shadow-sm">
+                                    <p class="font-bold text-sm text-navy">2. Line-by-Line Drafting</p>
+                                    <p class="text-xs text-slate-600 mt-1">Every DS-160, Schengen cover letter, Passport Seva form, and travel itinerary is prepared accurately with you.</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg border border-slate-200 border-t-4 border-t-crimson shadow-sm">
+                                    <p class="font-bold text-sm text-navy">3. Clear Consultancy Fees</p>
+                                    <p class="text-xs text-slate-600 mt-1">Official embassy and government fees are paid at actuals alongside upfront consultancy fees.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- =====================================================
+                              HERO 2: INDIAN PASSPORT & TATKAAL DESK
+                        ====================================================== -->
+
+                        <!-- =====================================================
+                              HERO 3: US F1 & B1/B2 VISA PREPARATION
+                        ====================================================== -->
+
+                        <!-- =====================================================
+                              HERO 4: SCHENGEN, UAE, UK & GLOBAL TOURIST VISAS
+                        ====================================================== -->
+
+                        <!-- =====================================================
+                              HERO 5: FLIGHTS & CUSTOM HOLIDAYS
+                        ====================================================== -->
+
+                    </div>
+
+                    <!-- RIGHT 5 COLUMNS: (1) STREAMLINED CONSULTATION DESK + (2) COMPACT 3-PHOTO FOUNDER ARCHIVE -->
+                    <div class="lg:col-span-5 space-y-6">
+
+                        <!-- =========================================================
+                              UX FIX: STREAMLINED CONSULTATION DESK
+                        ========================================================== -->
+                        <div id="inquiry-widget" class="scroll-mt-24 bg-white rounded-lg border-2 border-navy shadow-lg overflow-hidden">
+
+                            <!-- Top Navy Header -->
+                            <div class="bg-navy text-white px-6 py-4 border-b-4 border-gold flex items-center justify-between">
+                                <div>
+                                    <span class="text-[11px] uppercase tracking-wider text-amber-300 font-semibold block">
+                                        Direct Consultation &amp; Enquiry Desk
+                                    </span>
+                                    <h2 class="font-serif font-bold text-lg">
+                                        Start Your Visa, Passport or Tour Enquiry
+                                    </h2>
+                                </div>
+                                <span class="font-mono text-[11px] text-slate-300">
+                                    Panvel / Zoom
+                                </span>
+                            </div>
+
+                            <div class="p-6 space-y-4">
+
+                                <!-- Step 1: 4-Service Selector -->
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-2">
+                                        1. Select what you need help with:
+                                    </label>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button type="button"
+                                                data-service="US F1 / B1-B2 Visa & Interview Prep"
+                                                class="service-pill service-btn-active text-left px-3 py-2.5 rounded-lg border border-slate-300 text-xs font-semibold transition-all flex items-center gap-2">
+                                            <i class="fa-solid fa-graduation-cap text-slate-500"></i>
+                                            <span>US Visa (F1 / B1-B2)</span>
+                                        </button>
+                                        <button type="button"
+                                                data-service="Schengen / UK / Global Tourist Visa"
+                                                class="service-pill text-left px-3 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:border-navy text-xs font-semibold transition-all flex items-center gap-2">
+                                            <i class="fa-solid fa-earth-europe text-slate-500"></i>
+                                            <span>Schengen / Global Visa</span>
+                                        </button>
+                                        <button type="button"
+                                                data-service="Indian Passport / Tatkaal / PCC"
+                                                class="service-pill text-left px-3 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:border-navy text-xs font-semibold transition-all flex items-center gap-2">
+                                            <i class="fa-solid fa-passport text-slate-500"></i>
+                                            <span>Passport / Tatkaal</span>
+                                        </button>
+                                        <button type="button"
+                                                data-service="Flights & Custom Holiday Package"
+                                                class="service-pill text-left px-3 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:border-navy text-xs font-semibold transition-all flex items-center gap-2">
+                                            <i class="fa-solid fa-plane-departure text-slate-500"></i>
+                                            <span>Flights / Custom Tour</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2: Inputs -->
+                                <div class="space-y-3">
+                                    <div>
+                                        <label for="dest-input" class="block text-xs font-bold text-slate-700 mb-1">
+                                            2. Country, Visa Type, or Travel Month:
+                                        </label>
+                                        <input type="text" id="dest-input"
+                                               placeholder="e.g. US Fall F1 Mock Prep, Schengen in Nov, Tatkaal Passport"
+                                               class="w-full px-3.5 py-2 rounded-lg bg-ivory border border-slate-300 text-xs sm:text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy focus:bg-white">
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                        <div>
+                                            <label for="name-input" class="block text-xs font-bold text-slate-700 mb-1">
+                                                3. Your Name &amp; City:
+                                            </label>
+                                            <input type="text" id="name-input"
+                                                   placeholder="e.g. Rahul Patil, Panvel"
+                                                   class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy focus:bg-white">
+                                        </div>
+                                        <div>
+                                            <label for="contact-input" class="block text-xs font-bold text-slate-700 mb-1">
+                                                4. Phone or Email:
+                                            </label>
+                                            <input type="text" id="contact-input"
+                                                   placeholder="For callback / quote"
+                                                   class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-navy focus:bg-white">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- DUAL-ACTION SUBMIT BUTTONS -->
+                                <div class="space-y-2 pt-1">
+                                    <a id="wa-launch-btn"
+                                       href="https://wa.me/919324666369?text=Hi%20Shubham%2C%20I%20need%20assistance%20with%20US%20F1%20%2F%20B1-B2%20Visa%20%26%20Interview%20Prep"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="w-full bg-whatsapp hover:bg-emerald-800 text-white font-bold text-sm py-3 px-5 rounded-lg shadow-md flex items-center justify-center gap-2.5 transition-all">
+                                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                                        <span>Send Enquiry on WhatsApp</span>
+                                    </a>
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                        <button type="button" id="direct-email-submit-btn"
+                                                class="w-full bg-navy hover:bg-navyLight text-white font-bold text-xs py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-all">
+                                            <i class="fa-regular fa-paper-plane text-amber-300"></i>
+                                            <span>Send via Email Desk</span>
+                                        </button>
+                                        <button type="button" onclick="openBookingModal()"
+                                                class="w-full bg-goldLight hover:bg-amber-100 text-navy border border-gold font-bold text-xs py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-all">
+                                            <i class="fa-regular fa-calendar-check text-crimson"></i>
+                                            <span>Request a Call Slot</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Privacy & Document Handling Notice (DPDP Compliance) -->
+                                <p class="text-[11px] text-slate-500 leading-relaxed bg-ivory p-2.5 rounded border border-slate-200">
+                                    <i class="fa-solid fa-shield-halved text-navy mr-1"></i>
+                                    <strong>Privacy Note:</strong> We use your contact details solely to respond to your enquiry. Please do not send sensitive identity or financial documents until requested during your consultation. <a href="/privacy-terms/" target="_blank" rel="noopener" class="underline font-semibold text-navy hover:text-crimson">View Privacy &amp; Terms</a>.
+                                </p>
+
+                                <!-- Lead Magnet: Instant Checklist Download (.txt guide) -->
+                                <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                                    <span class="text-slate-600 font-medium">Want document requirements first?</span>
+                                    <button type="button" onclick="downloadChecklist('Master_Visa_Passport_Checklist')" class="font-bold text-crimson hover:underline flex items-center gap-1">
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                        <span>Download Checklist (.txt)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- =========================================================
+                              LIGHTWEIGHT 3-PHOTO FOUNDER ARCHIVE SLIDER
+                        ========================================================== -->
+<div id="usa-slideshow-card" class="bg-white p-3.5 rounded-xl border border-slate-300 shadow-sm max-w-md mx-auto lg:max-w-none">
+
+                            <div class="flex items-center justify-between pb-2.5 mb-2.5 border-b border-slate-100">
+                                <div class="flex items-center gap-2">
+                                    <span class="code-badge bg-navy text-amber-300">NYC</span>
+                                    <span class="font-serif font-bold text-xs sm:text-sm text-navy">Shubham at Pace University &amp; NYC</span>
+                                </div>
+                                <span class="font-mono text-[11px] text-slate-500">
+                                    MS in CS • Alumni
+                                </span>
+                            </div>
+
+                            <!-- 16:10 Compact Aspect Container -->
+                            <div id="usa-slideshow" class="relative w-full aspect-[16/10] bg-slate-900 rounded-lg overflow-hidden border border-slate-200 group select-none">
+
+                                <div id="slides-track" class="w-full h-full relative">
+                                    <img id="active-slide-img"
+                                         src="/usa-photos/1.jpg"
+                                         alt="Shubham Madhavi at Pace University and Lower Manhattan, New York"
+                                         width="800" height="500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         class="w-full h-full object-cover transition-opacity duration-500"
+                                         onerror="this.src='https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=900&q=80'">
+                                </div>
+
+                                <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/80 via-black/35 to-transparent pointer-events-none z-10"></div>
+
+                                <button type="button" id="prev-slide" aria-label="Previous photo"
+                                        class="absolute left-2.5 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-black/55 hover:bg-navy text-white flex items-center justify-center opacity-85 sm:opacity-0 group-hover:opacity-100 transition-all shadow">
+                                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                                </button>
+                                <button type="button" id="next-slide" aria-label="Next photo"
+                                        class="absolute right-2.5 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-black/55 hover:bg-navy text-white flex items-center justify-center opacity-85 sm:opacity-0 group-hover:opacity-100 transition-all shadow">
+                                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                                </button>
+
+                                <div id="slide-counter" class="absolute top-2.5 right-2.5 z-20 px-2 py-0.5 rounded-full bg-black/65 backdrop-blur-sm text-white font-mono text-[10px] tracking-wider border border-white/15">
+                                    1 / 3
+                                </div>
+
+                                <div class="absolute bottom-2.5 left-3 right-3 z-20 flex items-center justify-between gap-2">
+                                    <span id="slide-caption" class="text-[11px] font-medium text-white/95 truncate">
+                                        Pace University &amp; Lower Manhattan • NYC
+                                    </span>
+                                    <div id="slide-dots" class="flex items-center gap-1.5 shrink-0" role="tablist" aria-label="Gallery slides"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+              3A. HOME PAGE VIEW:
+              1. 4 SPECIALIZED DESKS WITH RECONCILED FEES + GOV FEE SEPARATION
+              2. CURATED TOUR PACKAGES WITH ALL-INCLUSIVE STARTING PRICES
+        ====================================================================== -->
+<section id="desks" data-page-section="home" class="scroll-mt-24 py-14 md:py-20 bg-white border-b border-slate-200 space-y-20">
+
+            <!-- PART 1: 4 SPECIALIZED CONSULTANCY DESKS & RECONCILED FEES -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-crimson">Core Service Desks • Reconciled Consultancy Fees</span>
+                        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-navy mt-1">
+                            Specialized Visa, Passport &amp; Ticketing Desks
+                        </h2>
+                    </div>
+                    <p class="text-sm text-slate-600 max-w-md">
+                        All official embassy, VFS, and Passport Seva government fees are paid separately at actuals. Select a desk below for full checklists and process details.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Priority Card 1: US Visa Preparation (Market-Aligned ₹4,500–₹11,000 range) -->
+                    <div class="bg-ivory rounded-lg p-6 border border-slate-200 border-t-4 border-t-crimson flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="code-badge bg-navy text-amber-300 text-xs px-2.5 py-1">US VISA</span>
+                                <span class="text-[11px] font-mono font-bold px-2.5 py-1 rounded bg-goldLight text-amber-900 border border-gold/40">Prep: ₹4,500–₹11,000</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-navy">US Visa &amp; Interview Prep</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Line-by-line DS-160 drafting, F-1 social media rule check, genuine sponsor financial organization, and mock interviews.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                <li>• <strong>F1 Student Coaching:</strong> ₹6,000 – ₹9,000</li>
+                                <li>• <strong>B1/B2 Visitor:</strong> ₹4,500 (₹7,500 Couple)</li>
+                                <li>• <strong>214(b) Refusal Review:</strong> ₹8,000 – ₹11,000</li>
+                                <li class="text-[11px] text-slate-500 pt-1"><em>+ Official US Visa fee at actuals</em></li>
+                            </ul>
+                        </div>
+                        <a href="/us-visa/"
+                                class="mt-5 w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors block">
+                            Open US Visa Desk &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Priority Card 2: Schengen, UK, UAE & Global Visas (Reconciled ₹1,000–₹5,000 range) -->
+                    <div class="bg-ivory rounded-lg p-6 border border-slate-200 border-t-4 border-t-gold flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="code-badge bg-navy text-white text-xs px-2.5 py-1">GLOBAL</span>
+                                <span class="text-[11px] font-mono font-bold px-2.5 py-1 rounded bg-emerald-100 text-emerald-800">Service: ₹1,000–₹5,000</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-navy">Schengen, UAE &amp; Global Visas</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Embassy cover letters, flight &amp; hotel itineraries, VFS biometric bookings, and tourist e-Visas.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                <li>• <strong>Dubai / Asia e-Visas:</strong> ₹1,000 – ₹2,500</li>
+                                <li>• <strong>Schengen / Japan / S. Africa:</strong> ₹2,500 – ₹4,500</li>
+                                <li>• <strong>UK / Aus / Canada:</strong> ₹3,500 – ₹5,000</li>
+                                <li class="text-[11px] text-slate-500 pt-1"><em>+ Embassy &amp; VFS fees at actuals</em></li>
+                            </ul>
+                        </div>
+                        <a href="/global-visas/"
+                                class="mt-5 w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors block">
+                            Open Global Visas Desk &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Priority Card 3: Indian Passport & Tatkaal Desk -->
+                    <div class="bg-ivory rounded-lg p-6 border border-slate-200 border-t-4 border-t-navy flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="code-badge bg-navy text-amber-300 text-xs px-2.5 py-1">PASSPORT</span>
+                                <span class="text-[11px] font-mono font-bold px-2.5 py-1 rounded bg-navy text-amber-300">Service: ₹1,000–₹2,500</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-navy">Indian Passport &amp; Tatkaal Desk</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                Online Passport Seva filing and pre-PSK original document check for Taloja, Panvel, Kharghar, and Navi Mumbai residents.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                <li>• <strong>Fresh / 10-Yr Renewal:</strong> ₹1,000 – ₹1,500</li>
+                                <li>• <strong>Tatkaal Filing &amp; Slot Help:</strong> ₹2,000 – ₹2,500</li>
+                                <li>• <strong>PCC / Minor / Updates:</strong> ₹1,000 – ₹1,500</li>
+                                <li class="text-[11px] text-slate-500 pt-1"><em>+ Official Passport Seva fee at actuals</em></li>
+                            </ul>
+                        </div>
+                        <a href="/passport-services/"
+                                class="mt-5 w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors block">
+                            Open Passport Desk &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Priority Card 4: Student Flights & Custom Tours -->
+                    <div class="bg-ivory rounded-lg p-6 border border-slate-200 border-t-4 border-t-navy flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="code-badge bg-slate-800 text-white text-xs px-2.5 py-1">FLIGHTS</span>
+                                <span class="text-[11px] font-mono font-bold px-2.5 py-1 rounded bg-slate-200 text-slate-800">Airfare &amp; Tours</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-navy">Student Flights &amp; Custom Tours</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                International/domestic airfares, student extra-baggage tickets, and all-inclusive custom holidays with in-house visa filing.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                <li>• <strong>Full Tour Visa Assistance:</strong> Included with tour</li>
+                                <li class="text-[11px] text-slate-500 pt-1"><em>+ Airfare, GST &amp; TCS as applicable</em></li>
+                            </ul>
+                        </div>
+                        <a href="/flights-holidays/"
+                                class="mt-5 w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors block">
+                            Open Flights &amp; Tours Desk &rarr;
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PART 2: CURATED ALL-INCLUSIVE TOUR PACKAGES (WITH FLIGHTS, STAYS, TRANSFERS & VISA SUPPORT) -->
+            <div id="curated-tours" class="scroll-mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200 pt-16">
+
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-crimson">All-Inclusive Holidays • Return Mumbai Flights + 4★ Stays + Transfers + Visa Support</span>
+                        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-navy mt-1">
+                            Curated All-Inclusive International &amp; Domestic Tours
+                        </h2>
+                    </div>
+                    <p class="text-sm text-slate-600 max-w-md">
+                        All-inclusive starting prices per person (twin sharing) departing from Mumbai. Includes return economy flights, verified 4-star stays, transfers, sightseeing, and our visa assistance. (Applicable GST &amp; TCS quoted per travel dates).
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Tour 1: Thailand (All-Inclusive with Mumbai Flights) -->
+                    <div class="bg-ivory rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="relative h-48 bg-slate-900 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=640&h=384&q=70"
+                                     width="640" height="384"
+                                     alt="Wat Arun temple in Bangkok, Thailand"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-navy/90 text-white text-[11px] font-bold">
+                                    TH • 5 Nights / 6 Days
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-goldLight text-navy text-[11px] font-bold border border-gold">
+                                    30-Day Visa-Free (as of Sep 2026)
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-baseline justify-between gap-2">
+                                    <h3 class="font-serif font-bold text-lg text-navy">Thailand: Bangkok &amp; Pattaya / Phuket</h3>
+                                </div>
+                                <p class="font-mono text-xs font-bold text-crimson mt-1">From ₹52,000 / person (All-Inclusive w/ Flights)</p>
+                                <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                    Includes return Mumbai flights, 4-star hotels with daily breakfast, private airport transfers, TDAC digital arrival card filing, and island excursions.
+                                </p>
+                                <ul class="mt-3 space-y-1 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                    <li>• Return economy airfare from Mumbai included</li>
+                                    <li>• Coral Island speedboat &amp; Chao Phraya dinner cruise</li>
+                                    <li>• Phi Phi Island &amp; 4-Island option (Phuket/Krabi)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'Thailand (Bangkok & Pattaya / Phuket) — 5N/6D All-Inclusive Package')"
+                                    class="w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors">
+                                Request All-Inclusive Thailand Quote &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tour 2: Dubai & Abu Dhabi (All-Inclusive with Flights & UAE e-Visa) -->
+                    <div class="bg-ivory rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="relative h-48 bg-slate-900 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=640&h=384&q=70"
+                                     width="640" height="384"
+                                     alt="Downtown Dubai skyline featuring Burj Khalifa"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-navy/90 text-white text-[11px] font-bold">
+                                    UAE • 5 Nights / 6 Days
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-goldLight text-navy text-[11px] font-bold border border-gold">
+                                    Flights + UAE e-Visa Included
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-lg text-navy">Dubai &amp; Abu Dhabi Family Escape</h3>
+                                <p class="font-mono text-xs font-bold text-crimson mt-1">From ₹68,000 / person (All-Inclusive w/ Flights &amp; Visa)</p>
+                                <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                    Return Mumbai flights, UAE 30-day tourist e-Visa with insurance, central 4-star hotel, desert safari, Marina dhow cruise, and Abu Dhabi tour.
+                                </p>
+                                <ul class="mt-3 space-y-1 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                    <li>• Return Mumbai flights &amp; UAE Tourist e-Visa included</li>
+                                    <li>• Burj Khalifa 124th Floor + Desert Safari w/ BBQ dinner</li>
+                                    <li>• Abu Dhabi BAPS Mandir &amp; Sheikh Zayed Grand Mosque</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'Dubai & Abu Dhabi — 5N/6D All-Inclusive Package + UAE Visa')"
+                                    class="w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors">
+                                Request All-Inclusive Dubai Quote &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tour 3: Bali, Indonesia (All-Inclusive with Flights) -->
+                    <div class="bg-ivory rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="relative h-48 bg-slate-900 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=640&h=384&q=70"
+                                     width="640" height="384"
+                                     alt="Scenic temple and rice terraces in Bali, Indonesia"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-navy/90 text-white text-[11px] font-bold">
+                                    ID • 6 Nights / 7 Days
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-goldLight text-navy text-[11px] font-bold border border-gold">
+                                    Flights + Private Car Included
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-lg text-navy">Bali: Ubud Villa &amp; Beach Resort</h3>
+                                <p class="font-mono text-xs font-bold text-crimson mt-1">From ₹66,000 / person (All-Inclusive w/ Flights)</p>
+                                <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                    Includes return flights from Mumbai, Ubud private pool villa + Seminyak/Nusa Dua resort, dedicated private car, and e-VOA assistance.
+                                </p>
+                                <ul class="mt-3 space-y-1 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                    <li>• Return economy flights from Mumbai included</li>
+                                    <li>• Nusa Penida West island tour by fast boat</li>
+                                    <li>• Kintamani volcano view, Ubud swing &amp; Uluwatu sunset</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'Bali Ubud & Seminyak — 6N/7D All-Inclusive Package')"
+                                    class="w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors">
+                                Request All-Inclusive Bali Quote &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tour 4: Vietnam (All-Inclusive with International + Domestic Flights & e-Visa) -->
+                    <div class="bg-ivory rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="relative h-48 bg-slate-900 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=640&h=384&q=70"
+                                     width="640" height="384"
+                                     alt="Limestone islands in Ha Long Bay, Vietnam"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-navy/90 text-white text-[11px] font-bold">
+                                    VN • 6 Nights / 7 Days
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-goldLight text-navy text-[11px] font-bold border border-gold">
+                                    Flights + Vietnam e-Visa Included
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-lg text-navy">Vietnam: Hanoi, Ha Long Bay &amp; Da Nang</h3>
+                                <p class="font-mono text-xs font-bold text-crimson mt-1">From ₹64,000 / person (All-Inclusive w/ Flights &amp; Visa)</p>
+                                <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                    Return international flights + internal Vietnam flight, Vietnam e-Visa, overnight Ha Long Bay cruise, Hoi An, and Ba Na Hills Golden Bridge.
+                                </p>
+                                <ul class="mt-3 space-y-1 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                    <li>• Return Mumbai flights, internal flight &amp; e-Visa included</li>
+                                    <li>• Overnight cruise on Ha Long Bay (all meals onboard)</li>
+                                    <li>• Ba Na Hills cable car &amp; Golden Hands Bridge</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'Vietnam (Hanoi, Ha Long Bay & Da Nang) — 6N/7D All-Inclusive Package')"
+                                    class="w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors">
+                                Request All-Inclusive Vietnam Quote &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tour 5: Swiss-Paris Schengen Classic (All-Inclusive with Flights & Schengen Visa Prep) -->
+                    <div class="bg-ivory rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="relative h-48 bg-slate-900 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=640&h=384&q=70"
+                                     width="640" height="384"
+                                     alt="Alpine mountains and valley in Switzerland"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-navy/90 text-white text-[11px] font-bold">
+                                    EU • 7 Nights / 8 Days
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-goldLight text-navy text-[11px] font-bold border border-gold">
+                                    Flights + Schengen File Included
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-lg text-navy">Swiss–Paris European Classic</h3>
+                                <p class="font-mono text-xs font-bold text-crimson mt-1">From ₹1,85,000 / person (All-Inclusive w/ Flights)</p>
+                                <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                    Return Mumbai flights, Paris &amp; Swiss Alps 4-star stays, scenic rail passes, and our complete Schengen VFS visa documentation service.
+                                </p>
+                                <ul class="mt-3 space-y-1 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                    <li>• Return economy airfare &amp; cross-border rail included</li>
+                                    <li>• Paris Eiffel Tower, Seine Cruise &amp; Mt. Titlis excursion</li>
+                                    <li>• Schengen cover letter, itinerary &amp; VFS slot service</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'Swiss-Paris Europe Tour — 7N/8D All-Inclusive + Schengen Visa')"
+                                    class="w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors">
+                                Request All-Inclusive Europe Quote &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tour 6: Domestic Family Escapes (All-Inclusive with Flights, Stays, Meals & Cab) -->
+                    <div class="bg-ivory rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="relative h-48 bg-slate-900 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=640&h=384&q=70"
+                                     width="640" height="384"
+                                     alt="Dal Lake houseboats and mountains in Kashmir, India"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-navy/90 text-white text-[11px] font-bold">
+                                    IN • 5 Nights / 6 Days (Domestic)
+                                </span>
+                                <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded bg-goldLight text-navy text-[11px] font-bold border border-gold">
+                                    Flights + Stays + Meals + Cab
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <h3 class="font-serif font-bold text-lg text-navy">Kashmir, Kerala &amp; Andaman Family Tours</h3>
+                                <p class="font-mono text-xs font-bold text-crimson mt-1">From ₹38,000 / person (All-Inclusive w/ Flights)</p>
+                                <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                                    Complete family holiday with return Mumbai flights, verified 4-star resorts/houseboats, daily breakfast &amp; dinner, and private SUV/sedan.
+                                </p>
+                                <ul class="mt-3 space-y-1 text-xs text-slate-700 border-t border-slate-200 pt-3">
+                                    <li>• <strong>Kashmir:</strong> Srinagar Houseboat, Gulmarg &amp; Pahalgam</li>
+                                    <li>• <strong>Kerala / Andaman:</strong> Munnar–Alleppey OR Havelock Island</li>
+                                    <li>• Return Mumbai flights, MAP meals &amp; private cab included</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5">
+                            <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'Domestic Family Tour (Kashmir / Kerala / Andaman) — 5N/6D All-Inclusive')"
+                                    class="w-full py-2.5 px-3 rounded-lg bg-navy hover:bg-navyLight text-white text-center text-xs font-bold transition-colors">
+                                Request All-Inclusive Domestic Quote &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- US East Coast Featured Banner Card (With All-Inclusive Starting Price Anchor) -->
+                <div class="mt-6 bg-ivory rounded-lg border-2 border-navy p-6 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 max-w-3xl">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-2.5 py-0.5 rounded bg-navy text-amber-300 text-[11px] font-bold uppercase">US • Founder-Curated Corridor</span>
+                            <span class="font-mono text-xs font-bold text-crimson">From ₹2,25,000 / person (All-Inclusive • 7N / 8D)</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-navy">US East Coast &amp; University Graduation Family Tour (NYC, D.C. &amp; Niagara)</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Planning to attend your child's university graduation in the US or take a family trip to New York? Curated by Shubham Madhavi (4 years in NYC)—includes return Mumbai flights, Manhattan &amp; D.C. hotels, sightseeing, and <strong>our B1/B2 Visitor Visa &amp; Mock Interview consultancy service</strong> (official US Embassy MRV fee paid separately at actuals).
+                        </p>
+                    </div>
+                    <button type="button" onclick="prefillBuilder('Flights & Custom Holiday Package', 'US East Coast / Graduation Family Tour (All-Inclusive) + B1/B2 Visa Prep')"
+                            class="shrink-0 w-full lg:w-auto px-6 py-3.5 rounded-lg bg-navy hover:bg-navyLight text-white text-xs font-bold transition-colors">
+                        Request All-Inclusive USA Tour Quote &rarr;
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================================
+              3B. DEDICATED PAGE VIEW: INDIAN PASSPORT & TATKAAL DESK
+        ====================================================================== -->
+
+        <!-- =====================================================================
+              3C. DEDICATED PAGE VIEW: US F1 & B1/B2 VISA PREPARATION
+        ====================================================================== -->
+
+        <!-- =====================================================================
+              3D. DEDICATED PAGE VIEW: SCHENGEN, UAE & GLOBAL TOURIST VISAS
+        ====================================================================== -->
+
+        <!-- =====================================================================
+              3E. DEDICATED PAGE VIEW: FLIGHTS & CUSTOM HOLIDAYS
+        ====================================================================== -->
+
+        <!-- =====================================================================
+              SOCIAL PROOF, ANONYMISED CASE STUDIES & GOOGLE REVIEWS
+              Review count number hidden as requested.
+        ====================================================================== -->
+        <section id="reviews-proof" class="scroll-mt-24 py-14 md:py-20 bg-ivory border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+                <!-- Header + Live Google Rating Summary -->
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 border-b border-slate-200">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-crimson">Client Experience • Navi Mumbai &amp; PAN-India</span>
+                        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-navy mt-1">
+                            Representative Case Studies &amp; Client Reviews
+                        </h2>
+                        <p class="text-sm text-slate-600 mt-1 max-w-2xl">
+                            How thorough DS-160 preparation, genuine financial document organization, and pre-PSK verification help our clients submit strong applications.
+                        </p>
+                    </div>
+
+                    <!-- Google Business Profile Rating Badge (Count Hidden) -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-300 shadow-sm flex items-center gap-4 shrink-0">
+                        <div class="w-12 h-12 rounded-lg bg-navy text-amber-300 flex flex-col items-center justify-center font-mono font-bold">
+                            <span class="text-base leading-none">5.0</span>
+                            <span class="text-[10px] text-amber-400">★★★★★</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-navy">Traversiq Global — Panvel</p>
+                            <p class="text-[11px] text-slate-600 font-medium">Verified Public Reviews on Google</p>
+                            <a href="https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA" target="_blank" rel="noopener noreferrer"
+                               class="text-[11px] font-bold text-crimson hover:underline inline-flex items-center gap-1 mt-0.5">
+                                <span>Verify on Google Maps</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 1: 3 Genuinely Anonymised Case Studies -->
+                <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                            Anonymised Preparation Case Studies:
+                        </h3>
+                        <span class="text-[11px] text-slate-500 italic">
+                            *Personal details anonymised for client privacy. Visa decisions rest solely with consular authorities.
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                        <!-- Case Study 1 -->
+                        <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <span class="px-2.5 py-1 rounded bg-goldLight text-navy border border-gold/40 font-mono text-[11px] font-bold">
+                                        US F1 • 214(b) RE-APPLICATION
+                                    </span>
+                                    <span class="font-mono text-[11px] text-slate-500">MS in Computer Science</span>
+                                </div>
+                                <h4 class="font-serif font-bold text-base text-navy">
+                                    F-1 Student Re-Application After Prior Section 214(b) Refusal
+                                </h4>
+                                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                    <strong>The Challenge:</strong> An engineering graduate from Navi Mumbai faced a prior Fall-intake refusal after submitting a DS-160 with one-line work duty entries and giving rehearsed answers regarding university selection.
+                                </p>
+                                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                    <strong>What We Covered:</strong> Audited and expanded the DS-160 academic/work history, verified 5-year social media disclosure compliance, organized the sanctioned education loan and parent ITR documents clearly, and conducted three unscripted mock interviews.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-600">
+                                <span>Service: DS-160 + 3 Mock Drills</span>
+                                <span class="font-semibold text-emerald-800">Outcome: F-1 Visa Issued (Mumbai)</span>
+                            </div>
+                        </div>
+
+                        <!-- Case Study 2 -->
+                        <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <span class="px-2.5 py-1 rounded bg-goldLight text-navy border border-gold/40 font-mono text-[11px] font-bold">
+                                        US B1/B2 • PARENTS VISIT
+                                    </span>
+                                    <span class="font-mono text-[11px] text-slate-500">University Convocation</span>
+                                </div>
+                                <h4 class="font-serif font-bold text-base text-navy">
+                                    Parents' B1/B2 Visitor Application for US Graduation
+                                </h4>
+                                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                    <strong>The Challenge:</strong> First-time international travelers (senior parents from Maharashtra) needed B1/B2 visitor visas to attend their child's Master's convocation in New York.
+                                </p>
+                                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                    <strong>What We Covered:</strong> Prepared both parents' DS-160 applications accurately, organized their genuine pension, bank statement, and Indian residence ties into a structured folder, and conducted bilingual Marathi/English interview preparation.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-600">
+                                <span>Service: Bilingual B1/B2 Prep</span>
+                                <span class="font-semibold text-emerald-800">Outcome: B1/B2 Visas Issued</span>
+                            </div>
+                        </div>
+
+                        <!-- Case Study 3 -->
+                        <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <span class="px-2.5 py-1 rounded bg-goldLight text-navy border border-gold/40 font-mono text-[11px] font-bold">
+                                        PASSPORT + SCHENGEN FILE
+                                    </span>
+                                    <span class="font-mono text-[11px] text-slate-500">Family Holiday</span>
+                                </div>
+                                <h4 class="font-serif font-bold text-base text-navy">
+                                    Tatkaal Passport Re-Issue Followed by Swiss–Paris Schengen Filing
+                                </h4>
+                                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                    <strong>The Challenge:</strong> A family planning a European holiday noticed one member's passport had less than 6 months validity remaining shortly before their intended Schengen VFS appointment window.
+                                </p>
+                                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+                                    <strong>What We Covered:</strong> Pre-verified 3 eligible IDs for a Tatkaal passport re-issue on the Passport Seva portal, and once the renewed booklet was dispatched, prepared their day-by-day Swiss/Paris cover letters, insurance, and VFS Mumbai submission file.
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-600">
+                                <span>Service: Tatkaal + Schengen Desk</span>
+                                <span class="font-semibold text-emerald-800">Outcome: Renewed &amp; Visas Issued</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Part 2: Client Testimonials (With Privacy Note on Abbreviated Surnames) -->
+                <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">
+                            Client Feedback (Published with Permission):
+                        </h3>
+                        <span class="text-[11px] text-slate-500">
+                            Last names abbreviated for privacy; full reviews available on our <a href="https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA" target="_blank" rel="noopener noreferrer" class="underline text-navy font-semibold">Google Business Profile</a>.
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-amber-500 text-xs">★★★★★</span>
+                                <span class="text-[11px] text-slate-400 font-mono">US F1 Visa Prep</span>
+                            </div>
+                            <p class="text-xs text-slate-700 leading-relaxed italic">
+                                "Shubham personally checked every section of my DS-160 and pointed out gaps in how I had described my academic projects and sponsor's income. His mock interviews helped me answer clearly at the Mumbai BKC counter."
+                            </p>
+                            <div class="pt-2 border-t border-slate-100">
+                                <p class="text-xs font-bold text-navy">Aditya K.</p>
+                                <p class="text-[11px] text-slate-500">Navi Mumbai • Fall MS Intake</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-amber-500 text-xs">★★★★★</span>
+                                <span class="text-[11px] text-slate-400 font-mono">Tatkaal Passport Desk</span>
+                            </div>
+                            <p class="text-xs text-slate-700 leading-relaxed italic">
+                                "Needed a Tatkaal passport re-issue with an address update in Taloja. Shubham checked all my original IDs at his office beforehand and helped book the PSK slot so my verification went through smoothly."
+                            </p>
+                            <div class="pt-2 border-t border-slate-100">
+                                <p class="text-xs font-bold text-navy">Prashant M.</p>
+                                <p class="text-[11px] text-slate-500">Taloja / Panvel, Navi Mumbai</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-amber-500 text-xs">★★★★★</span>
+                                <span class="text-[11px] text-slate-400 font-mono">Dubai Family Holiday + Visa</span>
+                            </div>
+                            <p class="text-xs text-slate-700 leading-relaxed italic">
+                                "Booked our 6-day Dubai and Abu Dhabi family trip with parents through Traversiq Global. From UAE e-Visas and flights to private airport transfers and Burj Khalifa tickets, everything was well-organized and clearly priced."
+                            </p>
+                            <div class="pt-2 border-t border-slate-100">
+                                <p class="text-xs font-bold text-navy">Sneha &amp; Rohan P.</p>
+                                <p class="text-[11px] text-slate-500">Navi Mumbai</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================================================
+              4. MEET THE FOUNDER + TALOJA/PANVEL OFFICE
+        ====================================================================== -->
+        <section id="founder" class="scroll-mt-24 py-14 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="bg-ivory rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+
+                        <!-- Left 5 Columns: Traversiq Global Medallion Image -->
+                        <div class="lg:col-span-5 bg-slate-100 p-6 sm:p-8 flex flex-col items-center justify-center border-b lg:border-b-0 lg:border-r border-slate-200">
+                            <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-xl overflow-hidden shadow-md border-2 border-gold bg-white">
+                                <img src="/brand-logo.jpg"
+                                     alt="Traversiq Global logo" width="288" height="288"
+                                     loading="lazy" decoding="async"
+                                     class="w-full h-full object-cover"
+                                     onerror="this.parentElement.innerHTML='<div class=\'w-full h-full bg-navy text-white flex flex-col items-center justify-center p-6 text-center\'><span class=\'font-serif font-bold text-2xl text-amber-300\'>TRAVERSIQ GLOBAL</span><span class=\'text-xs text-slate-300 mt-2\'>Visas • Flights • Passports</span></div>'">
+                            </div>
+                            <p class="text-xs font-semibold text-navy mt-3 text-center">
+                                TRAVERSIQ GLOBAL • TALOJA, PANVEL, NAVI MUMBAI (410208)
+                            </p>
+                        </div>
+
+                        <!-- Right 7 Columns: Founder Story & Direct Contact Details -->
+                        <div class="lg:col-span-7 p-6 sm:p-10 space-y-6">
+                            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4">
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-wider text-crimson">About the Founder</span>
+                                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-navy mt-0.5">Shubham Madhavi</h2>
+                                    <p class="text-xs sm:text-sm text-slate-600 font-medium">
+                                        Founder, Traversiq Global • MS in CS, Pace University (New York) • BE, University of Mumbai
+                                    </p>
+                                </div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <a href="https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="px-3.5 py-2 rounded-lg bg-goldLight hover:bg-amber-100 text-navy border border-gold/50 text-xs font-bold transition-colors">
+                                        <i class="fa-solid fa-location-dot text-crimson mr-1.5"></i>Google Maps
+                                    </a>
+                                    <a href="https://www.instagram.com/traversiq_global/"
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="px-3.5 py-2 rounded-lg bg-white hover:bg-slate-200 text-navy border border-slate-300 text-xs font-bold transition-colors">
+                                        <i class="fa-brands fa-instagram text-crimson mr-1.5"></i>@traversiq_global
+                                    </a>
+                                    <button type="button" id="copy-vcard-btn"
+                                            class="px-3.5 py-2 rounded-lg bg-white hover:bg-slate-200 text-navy border border-slate-300 text-xs font-bold transition-colors">
+                                        <i class="fa-regular fa-address-card mr-1.5"></i>Save Contact
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+                                <p>
+                                    After completing my Master's degree in New York and navigating international student life, visa applications, and global travel firsthand, I started <strong>Traversiq Global</strong> in Panvel to offer straightforward, well-organized visa, passport, and travel assistance.
+                                </p>
+                                <p>
+                                    We act as an independent preparation and travel consultancy—helping you understand requirements, organize genuine documents, prepare for interviews, and plan custom holidays with complete fee transparency.
+                                </p>
+                            </div>
+
+                            <!-- Contact Cards Grid -->
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+                                <div class="p-4 rounded-lg bg-white border border-slate-200">
+                                    <span class="text-[11px] font-bold uppercase text-slate-400 block">WhatsApp &amp; Phone</span>
+                                    <a href="tel:+919324666369" class="font-bold text-sm text-navy hover:underline mt-1 block">+91 93246 66369</a>
+                                    <span class="text-[11px] text-slate-500 block">Mon–Sat: 9:30 AM – 9:00 PM</span>
+                                    <span class="text-[10px] text-slate-400">Sundays by prior slot request</span>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-white border border-slate-200">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-[11px] font-bold uppercase text-slate-400">Email Desk</span>
+                                        <button type="button" id="copy-email-btn" class="text-[11px] text-crimson font-bold hover:underline">Copy</button>
+                                    </div>
+                                    <p class="font-bold text-sm text-navy mt-1 truncate">shubham@traversiq.com</p>
+                                    <span class="text-[11px] text-slate-500">Enquiries &amp; Custom Quotes</span>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-white border border-slate-200">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-[11px] font-bold uppercase text-slate-400">Office Location</span>
+                                        <a href="https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA" target="_blank" rel="noopener noreferrer" class="text-[11px] text-navy font-bold hover:underline">Directions &rarr;</a>
+                                    </div>
+                                    <p class="font-bold text-xs text-navy mt-1 leading-snug">
+                                        ISP 10, Plot No. 88, Near CNG Pump, Opp. Aditya Birla, Taloja, Panvel – 410208
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================================
+          FOOTER: NON-AFFILIATION DISCLAIMER, LEGAL LINKS & CLEAN SERVICE AREA
+    ====================================================================== -->
+    <footer class="bg-navy text-slate-300 py-10 border-t-4 border-gold text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+            <!-- Mandatory Non-Affiliation & Consular Discretion Disclaimer Box -->
+            <div class="bg-navyLight/70 border border-slate-700 rounded-lg p-4 text-[11px] text-slate-300 leading-relaxed">
+                <strong class="text-amber-300 uppercase tracking-wider block mb-1">Important Non-Affiliation &amp; Discretion Disclaimer:</strong>
+                <strong>Traversiq Global</strong> (Proprietor: Shubham Madhavi) is a private, independent visa preparation and travel consultancy based in Panvel, Navi Mumbai. We are <strong>not affiliated with, endorsed by, or part of the U.S. Government, U.S. Embassy/Consulates, Ministry of External Affairs (Passport Seva Kendra), VFS Global, or any foreign embassy</strong>. Official government forms are available for free on respective government portals. Our consultancy fees cover personalised application review, document organization, itinerary planning, and interview coaching. Visa approvals, passport dispatch timelines, and appointment availability are solely at the discretion of the respective government authorities and are never guaranteed.
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                <div class="flex items-center gap-3">
+                    <img src="/brand-logo.jpg"
+                         alt="" width="36" height="36" loading="lazy" decoding="async"
+                         class="w-9 h-9 rounded-full border border-gold logo-medallion-crop"
+                         onerror="this.style.display='none'">
+                    <div>
+                        <strong class="text-white font-serif tracking-wide">TRAVERSIQ GLOBAL</strong>
+                        <span class="text-slate-400 block text-[11px]">ISP 10, Plot No. 88, Near CNG Pump, Opp. Aditya Birla, Taloja, Panvel, Navi Mumbai, Maharashtra 410208</span>
+                    </div>
+                </div>
+                <div class="text-center sm:text-right text-[11px] text-slate-400">
+                    <p>Website: <a href="https://traversiq.com" class="text-amber-300 hover:underline font-semibold">traversiq.com</a> • Founded by Shubham Madhavi</p>
+                    <p class="mt-0.5">&copy; <span id="year"></span> Traversiq Global. All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- Navigation & Legal Policy Links -->
+            <div class="flex flex-wrap items-center justify-between gap-4 border-t border-slate-800 pt-4 text-[11px]">
+                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 font-semibold text-amber-300">
+                    <a href="/" class="hover:underline">Overview</a>
+                    <a href="/us-visa/" class="hover:underline">US Visa Consultation</a>
+                    <a href="/global-visas/" class="hover:underline">Global Visas</a>
+                    <a href="/passport-services/" class="hover:underline">Passport Desk</a>
+                    <a href="/flights-holidays/" class="hover:underline">Flights &amp; Tours</a>
+                    <a href="#reviews-proof" class="hover:underline">Case Studies</a>
+                </div>
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-slate-300">
+                    <a href="/privacy-terms/#privacy" class="hover:text-amber-300 underline">Privacy &amp; Document Policy (DPDP)</a>
+                    <a href="/privacy-terms/#refunds" class="hover:text-amber-300 underline">Terms &amp; Refund Policy</a>
+                    <a href="https://www.instagram.com/traversiq_global/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 underline inline-flex items-center gap-1">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>@traversiq_global</span>
+                    </a>
+                    <a href="https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 underline">Google Maps</a>
+                </div>
+            </div>
+
+            <!-- Clean, Non-Stuffed Service Area Note -->
+            <div class="border-t border-slate-800 pt-3 text-[11px] text-slate-400 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <p>
+                    <strong>In-Person &amp; Online Availability:</strong> Walk-in consultations at our Taloja, Panvel desk serving residents across Navi Mumbai, Thane, and Mumbai, with Zoom/Google Meet sessions available across India.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Call, Request Slot & WhatsApp Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 p-2 flex items-center gap-2 shadow-lg">
+        <a href="tel:+919324666369"
+           class="px-3 py-3 rounded-lg bg-ivory text-navy font-bold text-xs border border-slate-300 flex items-center gap-1">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+        </a>
+        <button type="button" onclick="openBookingModal()"
+                class="px-3 py-3 rounded-lg bg-navy text-white font-bold text-xs flex items-center gap-1">
+            <i class="fa-regular fa-calendar-check text-amber-300"></i>
+            <span>Request Slot</span>
+        </button>
+        <a href="https://wa.me/919324666369?text=Hi%20Shubham%2C%20I%20visited%20traversiq.com%20and%20need%20help%20with%20a%20visa%2C%20passport%2C%20or%20trip."
+           target="_blank" rel="noopener noreferrer"
+           class="flex-1 bg-whatsapp text-white font-bold text-xs py-3 px-3 rounded-lg flex items-center justify-center gap-1.5">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>WhatsApp Desk</span>
+        </a>
+    </div>
+
+    <!-- =====================================================================
+          DOM ORDER & ACCESSIBILITY FIX:
+          Toast Notification and Slot Request Modal
+    ====================================================================== -->
+
+    <!-- Toast Notification -->
+    <div id="toast" role="status" aria-live="polite" aria-hidden="true" class="fixed top-20 right-5 z-50 transform translate-x-[130%] opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-navy text-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-3 border-l-4 border-gold">
+            <i class="fa-solid fa-circle-check text-amber-400 text-lg"></i>
+            <div>
+                <p id="toast-title" class="text-xs font-bold tracking-wide"></p>
+                <p id="toast-desc" class="text-[11px] text-slate-200"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Consultation Slot Request Modal -->
+    <div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" class="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-lg w-full border-2 border-navy shadow-2xl overflow-hidden">
+            <div class="bg-navy text-white px-6 py-4 border-b-4 border-gold flex items-center justify-between">
+                <div>
+                    <span id="modal-badge" class="text-[11px] uppercase tracking-wider text-amber-300 font-semibold block">Consultation Request</span>
+                    <h3 id="modal-title" class="font-serif font-bold text-lg">Request a Consultation or Mock Interview Slot</h3>
+                </div>
+                <button type="button" onclick="closeModal()" aria-label="Close modal" class="text-slate-300 hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="modal-form" onsubmit="handleModalSubmit(event)" class="p-6 space-y-4">
+                <p id="modal-subtitle" class="text-xs text-slate-600 leading-relaxed">
+                    Select a preferred date and time window for your session with <strong>Shubham Madhavi</strong> (Zoom / Google Meet or in-person at our Taloja, Panvel desk). We will reply to confirm availability.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label for="modal-name" class="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
+                        <input type="text" id="modal-name" required placeholder="e.g. Rohan Deshmukh"
+                               class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-navy">
+                    </div>
+                    <div>
+                        <label for="modal-phone" class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp *</label>
+                        <input type="tel" id="modal-phone" required placeholder="e.g. +91 98XXXXXXXX"
+                               class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-navy">
+                    </div>
+                </div>
+
+                <div id="slot-picker-fields" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label for="modal-date" class="block text-xs font-bold text-slate-700 mb-1">Preferred Date *</label>
+                        <input type="date" id="modal-date"
+                               class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-navy">
+                    </div>
+                    <div>
+                        <label for="modal-time" class="block text-xs font-bold text-slate-700 mb-1">Time Window (IST)</label>
+                        <select id="modal-time" class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-navy">
+                            <option value="Morning (10:30 AM – 1:00 PM)">Morning (10:30 AM – 1:00 PM)</option>
+                            <option value="Afternoon (2:00 PM – 5:00 PM)">Afternoon (2:00 PM – 5:00 PM)</option>
+                            <option value="Evening (6:00 PM – 8:30 PM)">Evening (6:00 PM – 8:30 PM)</option>
+                            <option value="Sunday / Prior Appointment Request">Sunday (By Prior Request)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="modal-topic" class="block text-xs font-bold text-slate-700 mb-1">Consultation Topic</label>
+                    <select id="modal-topic" class="w-full px-3 py-2 rounded-lg bg-ivory border border-slate-300 text-xs text-slate-900 focus:outline-none focus:border-navy">
+                        <option value="US F1 / B1-B2 Visa & Mock Interview">US F1 / B1-B2 Visa &amp; Mock Interview</option>
+                        <option value="Section 214(b) Post-Refusal Review">Section 214(b) Post-Refusal Review</option>
+                        <option value="Schengen / UK / Global Tourist Visa File">Schengen / UK / Global Tourist Visa File</option>
+                        <option value="Indian Passport / Tatkaal / PCC">Indian Passport / Tatkaal / PCC</option>
+                        <option value="All-Inclusive Family Holiday / Student Flight Booking">All-Inclusive Family Holiday / Student Flight Booking</option>
+                        <option value="General Visa or Travel Consultation">General Visa or Travel Consultation</option>
+                    </select>
+                </div>
+
+                <div class="pt-2 flex flex-col sm:flex-row gap-2.5">
+                    <button type="submit" data-mode="whatsapp"
+                            class="flex-1 bg-whatsapp hover:bg-emerald-800 text-white font-bold text-xs py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span id="modal-primary-btn-text">Request Slot via WhatsApp</span>
+                    </button>
+                    <button type="button" onclick="handleModalEmailFallback()"
+                            class="px-4 py-3 rounded-lg bg-navy hover:bg-navyLight text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Request via Email</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+          APPLICATION LOGIC
+    ====================================================================== -->
+    <script>
+        const WA_NUMBER = "919324666369";
+        const DESK_EMAIL = "shubham@traversiq.com";
+        let currentService = "US F1 / B1-B2 Visa & Interview Prep";
+
+        const pills = document.querySelectorAll('.service-pill');
+        const destInput = document.getElementById('dest-input');
+        const nameInput = document.getElementById('name-input');
+        const contactInput = document.getElementById('contact-input');
+        const waLaunchBtn = document.getElementById('wa-launch-btn');
+        const directEmailBtn = document.getElementById('direct-email-submit-btn');
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            mobileBtn.setAttribute('aria-expanded', !isHidden);
+        });
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Build Formatted Enquiry Message
+        function buildMessageString() {
+            const dest = destInput.value.trim() || "To be discussed";
+            const name = nameInput.value.trim();
+            const contact = contactInput.value.trim();
+
+            const lines = [
+                "Hi Shubham,",
+                `I need assistance with: ${currentService}`,
+                `Requirement / Travel Plan: ${dest}`
+            ];
+            if (name) lines.push(`Name & City: ${name}`);
+            if (contact) lines.push(`Contact: ${contact}`);
+
+            return lines.join("\n");
+        }
+
+        // Dynamically Update Native WhatsApp Link Href
+        function syncBrief() {
+            const msg = buildMessageString();
+            waLaunchBtn.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+        }
+
+        // Direct Email / Callback Fallback Handler
+        directEmailBtn.addEventListener('click', () => {
+            const msg = buildMessageString();
+            const subject = `Traversiq Enquiry: ${currentService} — ${nameInput.value.trim() || 'Website Lead'}`;
+            const mailtoUrl = `mailto:${DESK_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg + "\n\nPlease call or email me back with the next steps.")}`;
+            showToast("Opening Email Desk...", "Your enquiry details have been pre-filled.");
+            window.location.href = mailtoUrl;
+        });
+
+        // Service Button Click
+        pills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                pills.forEach(p => p.classList.remove('service-btn-active'));
+                pill.classList.add('service-btn-active');
+                currentService = pill.getAttribute('data-service');
+                syncBrief();
+            });
+        });
+
+        // Pre-fill Helper for Service Pills & Section Buttons
+        window.prefillBuilder = function(serviceName, sampleDest) {
+            currentService = serviceName;
+            pills.forEach(p => {
+                p.classList.toggle('service-btn-active', p.getAttribute('data-service') === serviceName);
+            });
+            if (sampleDest) {
+                destInput.value = sampleDest;
+            }
+            syncBrief();
+            document.getElementById('inquiry-widget').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => destInput.focus(), 450);
+        };
+
+        destInput.addEventListener('input', syncBrief);
+        nameInput.addEventListener('input', syncBrief);
+        contactInput.addEventListener('input', syncBrief);
+
+        // Toast Helper
+        function showToast(title, desc) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-title').textContent = title;
+            document.getElementById('toast-desc').textContent = desc || '';
+            toast.setAttribute('aria-hidden', 'false');
+            toast.classList.remove('translate-x-[130%]', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-x-[130%]', 'opacity-0');
+                toast.setAttribute('aria-hidden', 'true');
+            }, 3000);
+        }
+
+        // Clipboard Copy with Toast
+        function copyText(text, title) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => showToast(title, "Ready to paste.")).catch(() => fallbackCopy(text, title));
+            } else {
+                fallbackCopy(text, title);
+            }
+        }
+
+        function fallbackCopy(text, title) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); showToast(title, "Ready to paste."); } catch (e) {}
+            document.body.removeChild(ta);
+        }
+
+        document.getElementById('copy-email-btn').addEventListener('click', () => {
+            copyText("shubham@traversiq.com", "Email Copied!");
+        });
+
+        document.getElementById('copy-vcard-btn').addEventListener('click', () => {
+            copyText("Shubham Madhavi — Traversiq Global\nPhone/WhatsApp: +91 93246 66369\nEmail: shubham@traversiq.com\nInstagram: https://www.instagram.com/traversiq_global/\nAddress: ISP 10, Plot No. 88, Near CNG Pump, Opposite Aditya Birla, Taloja, Panvel, Navi Mumbai - 410208\nGoogle Maps: https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA", "Contact Details Copied!");
+        });
+
+        // =====================================================================
+        // CONSULTATION SLOT REQUEST MODAL
+        // =====================================================================
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modalDateInput = document.getElementById('modal-date');
+
+        if (modalDateInput) {
+            const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+            modalDateInput.min = tomorrow;
+            modalDateInput.value = tomorrow;
+        }
+
+        window.openBookingModal = function(prefillTopic) {
+            const topicSelect = document.getElementById('modal-topic');
+            if (prefillTopic && topicSelect) {
+                const needle = prefillTopic.toLowerCase();
+                let matched = false;
+                for (let i = 0; i < topicSelect.options.length; i++) {
+                    const optVal = topicSelect.options[i].value.toLowerCase();
+                    if (optVal.includes(needle) || (needle.includes('214') && optVal.includes('214')) || (needle.includes('us ') && optVal.includes('us f1'))) {
+                        topicSelect.selectedIndex = i;
+                        matched = true;
+                        break;
+                    }
+                }
+                if (!matched && currentService) {
+                    const serviceNeedle = currentService.slice(0, 8).toLowerCase();
+                    for (let i = 0; i < topicSelect.options.length; i++) {
+                        if (topicSelect.options[i].value.toLowerCase().includes(serviceNeedle)) {
+                            topicSelect.selectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+            }
+            modalOverlay.classList.remove('hidden');
+            modalOverlay.classList.add('flex');
+            modalOverlay.setAttribute('aria-hidden', 'false');
+        };
+
+        window.closeModal = function() {
+            modalOverlay.classList.add('hidden');
+            modalOverlay.classList.remove('flex');
+            modalOverlay.setAttribute('aria-hidden', 'true');
+        };
+
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        window.handleModalSubmit = function(e) {
+            e.preventDefault();
+            const name = document.getElementById('modal-name').value.trim();
+            const phone = document.getElementById('modal-phone').value.trim();
+            const date = document.getElementById('modal-date').value;
+            const time = document.getElementById('modal-time').value;
+            const topic = document.getElementById('modal-topic').value;
+
+            const slotMsg = [
+                "Hi Shubham, I would like to request a Consultation Slot:",
+                `• Topic: ${topic}`,
+                `• Preferred Date: ${date}`,
+                `• Time Window: ${time}`,
+                `• Name: ${name}`,
+                `• Phone: ${phone}`
+            ].join("\n");
+
+            closeModal();
+            window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(slotMsg)}`, '_blank');
+        };
+
+        window.handleModalEmailFallback = function() {
+            const name = document.getElementById('modal-name').value.trim() || "Applicant";
+            const phone = document.getElementById('modal-phone').value.trim() || "Not provided";
+            const date = document.getElementById('modal-date').value;
+            const time = document.getElementById('modal-time').value;
+            const topic = document.getElementById('modal-topic').value;
+
+            if (!phone || phone === "Not provided") {
+                showToast("Please enter your Name & Phone", "Required so we can confirm your slot.");
+                return;
+            }
+
+            const subject = `Slot Request: ${topic} (${name})`;
+            const body = `Hi Shubham,\n\nPlease let me know if this consultation slot is available:\n\nTopic: ${topic}\nPreferred Date: ${date}\nTime Window: ${time}\nName: ${name}\nPhone/WhatsApp: ${phone}\n\nThank you.`;
+            closeModal();
+            window.location.href = `mailto:${DESK_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        };
+
+        // Instant Document Checklist Generator (.txt file download with updated 2025/2026 F-1 Social Media rules)
+        window.downloadChecklist = function(checklistType) {
+            const checklistContent = `====================================================================
+TRAVERSIQ GLOBAL — VISA & PASSPORT DOCUMENT CHECKLIST
+Led by Shubham Madhavi (MS, Pace University, New York)
+Office: ISP 10, Plot No. 88, Opp. Aditya Birla, Taloja, Panvel – 410208
+Direct WhatsApp / Phone: +91 93246 66369 | Email: shubham@traversiq.com
+Web: https://traversiq.com
+====================================================================
+
+1. US F1 STUDENT VISA CHECKLIST (MUMBAI BKC CONSULATE)
+--------------------------------------------------------------------
+[ ] Valid Passport (Minimum 6 months validity beyond intended stay)
+[ ] DS-160 Confirmation Page (Barcoded — reviewed line-by-line)
+[ ] Mandatory Social Media Disclosure (All platforms & usernames used in
+    the past 5 years listed on DS-160; privacy settings set to PUBLIC
+    for F-1 / M-1 / J-1 vetting compliance)
+[ ] US Visa Appointment Confirmation & Official MRV Fee Receipt
+[ ] Form I-20 signed by University DSO & Student
+[ ] SEVIS I-901 Fee Payment Receipt
+[ ] Academic Originals: 10th, 12th, Degree Transcripts, GRE/TOEFL/IELTS/Duolingo
+[ ] Genuine Sponsor Financial File:
+    - Sanctioned Education Loan Letter (if applicable)
+    - Last 6 Months Bank Statements / Fixed Deposits of Sponsors
+    - Last 3 Years ITR (Income Tax Returns) of Parents / Sponsors
+    - CA Valuation Summary & Genuine Business/Salary Proofs
+
+2. US B1/B2 VISITOR / FAMILY / GRADUATION VISA CHECKLIST
+--------------------------------------------------------------------
+[ ] Valid Passport + All Old Passports
+[ ] DS-160 Confirmation Page & Appointment Confirmation
+[ ] For Salaried: Employer NOC & Leave Letter, 6 Months Payslips, 3 Yrs ITR
+[ ] For Business/Self-Employed: GST/Udyam Registration, 3 Yrs ITR, 6 Months Bank Stmt
+[ ] For Parents Visiting Child in USA:
+    - Child's Passport Bio Page, Visa Copy, I-20 / I-797, University Convocation Invite
+    - Genuine Property / Pension / Family Home-Ties Proofs in India
+
+3. SCHENGEN / UK / GLOBAL TOURIST VISA CHECKLIST
+--------------------------------------------------------------------
+[ ] Valid Passport (At least 2 blank pages, issued within last 10 years)
+[ ] 2 Biometric Photographs (35x45mm, 80% face coverage, matte white bg)
+[ ] Detailed Day-by-Day Cover Letter & Travel Itinerary
+[ ] Confirmed Return Flight Reservation & Hotel Vouchers
+[ ] Travel Medical Insurance (€30,000 minimum coverage for Schengen)
+[ ] Last 6 Months Stamped & Signed Bank Statement + Last 3 Years ITR
+
+4. INDIAN PASSPORT & TATKAAL DESK (PANVEL / NAVI MUMBAI)
+--------------------------------------------------------------------
+[ ] Aadhaar Card (With updated full DOB & current address)
+[ ] PAN Card / Voter ID / Driving Licence (3 eligible IDs required for Tatkaal)
+[ ] 10th Passing Certificate / Degree Certificate (For Non-ECR category)
+[ ] Existing Original Passport (For 10-Year Re-issue / Address Update / PCC)
+
+====================================================================
+Disclaimer: Traversiq Global is a private consultancy and is not
+affiliated with any government or embassy. Visa approvals and processing
+timelines rest solely with the issuing authorities.
+====================================================================`;
+
+            const blob = new Blob([checklistContent], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Traversiq_Global_${checklistType}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast("Checklist Downloaded (.txt)", "Check your downloads folder for the complete guide.");
+        };
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        syncBrief();
+
+        // =====================================================================
+        // PAGE INIT
+        // Every service is now its own URL, built by _source/build.py. The build
+        // writes this page's default service and enquiry text onto <body>.
+        // =====================================================================
+        (function initPage() {
+            const page = document.body.dataset;
+            if (page.service) {
+                currentService = page.service;
+                pills.forEach(p => {
+                    p.classList.toggle('service-btn-active', p.getAttribute('data-service') === currentService);
+                });
+            }
+            if (page.dest) destInput.value = page.dest;
+            syncBrief();
+        })();
+
+        // =====================================================================
+        // COMPACT 3-PHOTO FOUNDER ARCHIVE SLIDER
+        // =====================================================================
+        (function initCompactUsaSlideshow() {
+            const FOLDER_PATH = '/usa-photos';
+            const INTERVAL_MS = 4500;
+
+            const CURATED_CAPTIONS = [
+                "Pace University & Lower Manhattan • New York",
+                "Brooklyn Bridge & Financial District • NYC",
+                "Midtown Manhattan Skyline • New York"
+            ];
+
+            const activeImg = document.getElementById('active-slide-img');
+            const dotsContainer = document.getElementById('slide-dots');
+            const counter = document.getElementById('slide-counter');
+            const captionEl = document.getElementById('slide-caption');
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            const box = document.getElementById('usa-slideshow');
+
+            // The slideshow only exists on the Home and US Visa pages.
+            if (!activeImg || !box) return;
+
+            // Photos 2 and 3 are fetched only when their slide is shown,
+            // instead of all three being downloaded on page load.
+            const slidesData = CURATED_CAPTIONS.map((caption, i) => ({
+                url: `${FOLDER_PATH}/${i + 1}.jpg`,
+                caption: caption
+            }));
+            let currentIndex = 0;
+            let timer = null;
+
+            function buildDots() {
+                dotsContainer.innerHTML = '';
+                slidesData.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.setAttribute('aria-label', `View photo ${i + 1}`);
+                    dot.className = `h-1.5 rounded-full transition-all ${i === 0 ? 'w-5 bg-amber-400' : 'w-1.5 bg-white/60'}`;
+                    dot.addEventListener('click', () => {
+                        goToSlide(i);
+                        startAutoPlay();
+                    });
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            function updateUI() {
+                const currentSlide = slidesData[currentIndex];
+                activeImg.src = currentSlide.url;
+                activeImg.alt = currentSlide.caption;
+
+                dotsContainer.querySelectorAll('button').forEach((dot, i) => {
+                    dot.className = `h-1.5 rounded-full transition-all ${i === currentIndex ? 'w-5 bg-amber-400' : 'w-1.5 bg-white/60'}`;
+                });
+
+                counter.textContent = `${currentIndex + 1} / ${slidesData.length}`;
+                if (captionEl) captionEl.textContent = currentSlide.caption;
+            }
+
+            function goToSlide(index) {
+                currentIndex = (index + slidesData.length) % slidesData.length;
+                updateUI();
+            }
+
+            function startAutoPlay() {
+                stopAutoPlay();
+                timer = setInterval(() => goToSlide(currentIndex + 1), INTERVAL_MS);
+            }
+
+            function stopAutoPlay() {
+                if (timer) clearInterval(timer);
+                timer = null;
+            }
+
+            prevBtn.addEventListener('click', () => { goToSlide(currentIndex - 1); startAutoPlay(); });
+            nextBtn.addEventListener('click', () => { goToSlide(currentIndex + 1); startAutoPlay(); });
+
+            box.addEventListener('mouseenter', stopAutoPlay);
+            box.addEventListener('mouseleave', startAutoPlay);
+
+            buildDots();
+
+            // Auto-advance only while the slideshow is actually on screen.
+            if ('IntersectionObserver' in window) {
+                new IntersectionObserver(entries => {
+                    entries.forEach(entry => entry.isIntersecting ? startAutoPlay() : stopAutoPlay());
+                }, { threshold: 0.4 }).observe(box);
+            } else {
+                startAutoPlay();
+            }
+        })();
+
+        // =====================================================================
+        // GA4 LEAD TRACKING
+        // =====================================================================
+        document.querySelectorAll('a[href*="wa.me"], a[href^="tel:"], #direct-email-submit-btn').forEach(el => {
+            el.addEventListener('click', function() {
+                if (typeof gtag === 'function') {
+                    const href = this.href || '';
+                    const eventName = href.includes('wa.me') ? 'whatsapp_lead_click' : (href.startsWith('tel:') ? 'phone_call_click' : 'email_lead_submit');
+                    gtag('event', eventName, {
+                        'service_selected': currentService,
+                        'destination_input': destInput.value.trim() || 'Not specified',
+                        'button_id': this.id || 'cta_button'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

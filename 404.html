@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================================
+          DOMAIN CONSOLIDATION (.IN -> .COM) & GA4 ANALYTICS
+    ====================================================================== -->
+    <script>
+      if (window.location.hostname === 'traversiq.in' || window.location.hostname === 'www.traversiq.in') {
+          window.location.replace('https://traversiq.com' + window.location.pathname + window.location.search + window.location.hash);
+      }
+      // Old single-page links (traversiq.com/#us-visa etc.) now forward to the real page URLs.
+      (function () {
+          var legacy = {
+              '#us-visa': '/us-visa/', '#global-visas': '/global-visas/',
+              '#passport-services': '/passport-services/', '#passport': '/passport-services/',
+              '#flights-holidays': '/flights-holidays/', '#flights': '/flights-holidays/'
+          };
+          var target = legacy[window.location.hash];
+          if (target && window.location.pathname !== target) window.location.replace(target);
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) - GA4 (Stream ID: 16205322620) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SVKHEMNLL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4SVKHEMNLL');
+    </script>
+
+    <!-- =====================================================================
+          PER-PAGE SEO TAGS (filled in by _source/build.py for each URL)
+    ====================================================================== -->
+    <title>Page Not Found | Traversiq Global</title>
+    <meta name="description" content="This page could not be found on traversiq.com.">
+
+    <meta name="author" content="Shubham Madhavi">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0B1F3A">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- OPEN GRAPH + TWITTER CARD (matched with title & description) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Traversiq Global">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:url" content="https://traversiq.com/">
+    <meta property="og:title" content="Page Not Found | Traversiq Global">
+    <meta property="og:description" content="This page could not be found on traversiq.com.">
+    <meta property="og:image" content="https://traversiq.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Page Not Found | Traversiq Global">
+    <meta name="twitter:description" content="This page could not be found on traversiq.com.">
+    <meta name="twitter:image" content="https://traversiq.com/og-image.jpg">
+
+    <!-- =====================================================================
+          GOOGLE LOCAL BUSINESS SCHEMA (JSON-LD)
+    ====================================================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "@id": "https://traversiq.com/#business",
+      "name": "Traversiq Global",
+      "alternateName": "Traversiq Visa & Travel Desk",
+      "url": "https://traversiq.com/",
+      "logo": "https://traversiq.com/brand-logo.jpg",
+      "image": "https://traversiq.com/brand-logo.jpg",
+      "hasMap": "https://maps.app.goo.gl/nTVXb4WnM2MTmEZaA",
+      "sameAs": [
+        "https://www.instagram.com/traversiq_global/"
+      ],
+      "description": "Independent US F1 & B1/B2 visa preparation, DS-160 review, Schengen & Dubai tourist visas, Indian Passport & Tatkaal assistance, flight ticketing, and custom holidays in Taloja, Panvel, Navi Mumbai.",
+      "telephone": "+919324666369",
+      "email": "shubham@traversiq.com",
+      "priceRange": "₹₹",
+      "founder": {
+        "@type": "Person",
+        "name": "Shubham Madhavi",
+        "alumniOf": "Pace University, New York"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ISP 10, Plot No. 88, Near CNG Pump, Opposite Aditya Birla, Taloja",
+        "addressLocality": "Panvel, Navi Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "410208",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.9894,
+        "longitude": 73.1175
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Taloja" },
+        { "@type": "City", "name": "Panvel" },
+        { "@type": "City", "name": "Navi Mumbai" },
+        { "@type": "City", "name": "Kharghar" },
+        { "@type": "City", "name": "Kamothe" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:30",
+          "closes": "21:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN (build.py swaps this for /assets/site.css once that file exists) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Libre Baskerville + Plus Jakarta Sans + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#FAF8F3',       // Warm background
+                        navy: '#0B1F3A',        // Deep Navy
+                        navyLight: '#16325B',   // Hover Navy
+                        gold: '#C59B27',        // Accent Gold
+                        goldLight: '#FBF6E8',   // Soft Gold tint
+                        crimson: '#C8102E',     // Accent Crimson
+                        whatsapp: '#15803D'     // WhatsApp Green CTA
+                    },
+                    fontFamily: {
+                        serif: ['Libre Baskerville', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF8F3;
+            color: #0F172A;
+            overflow-x: hidden;
+        }
+        .service-btn-active {
+            background-color: #0B1F3A !important;
+            color: #FFFFFF !important;
+            border-color: #0B1F3A !important;
+            box-shadow: 0 2px 6px rgba(11, 31, 58, 0.18);
+        }
+        .service-btn-active i {
+            color: #FCD34D !important;
+        }
+        .logo-medallion-crop {
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1.18);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Windows-compatible country code pill badge */
+        .code-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2px 5px;
+            border-radius: 4px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-navy selection:text-white">
+
+    <header class="bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+            <a href="/" class="font-serif font-bold text-base sm:text-lg text-navy tracking-tight whitespace-nowrap">TRAVERSIQ GLOBAL</a>
+            <nav aria-label="Main Navigation" class="flex items-center gap-4 text-xs font-semibold text-slate-700">
+                <a href="/us-visa/" class="hidden sm:inline hover:text-navy">US Visas</a>
+                <a href="/global-visas/" class="hidden sm:inline hover:text-navy">Global Visas</a>
+                <a href="/passport-services/" class="hidden sm:inline hover:text-navy">Passports</a>
+                <a href="/flights-holidays/" class="hidden sm:inline hover:text-navy">Flights &amp; Tours</a>
+                <a href="/" class="px-3 py-2 rounded-lg bg-navy hover:bg-navyLight text-white font-bold">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+        <p class="text-xs font-bold uppercase tracking-wider text-crimson">Error 404</p>
+        <h1 class="font-serif text-2xl sm:text-4xl font-bold text-navy mt-1 leading-snug">This page could not be found.</h1>
+        <p class="mt-4 text-sm text-slate-600 leading-relaxed">The link may be old or mistyped. These pages cover everything we do:</p>
+        <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-semibold text-navy">
+            <li><a href="/" class="block px-4 py-3 rounded-lg bg-white border border-slate-300 hover:border-navy">Overview &amp; all service desks</a></li>
+            <li><a href="/us-visa/" class="block px-4 py-3 rounded-lg bg-white border border-slate-300 hover:border-navy">US F1 &amp; B1/B2 visa prep</a></li>
+            <li><a href="/global-visas/" class="block px-4 py-3 rounded-lg bg-white border border-slate-300 hover:border-navy">Schengen, UAE &amp; global visas</a></li>
+            <li><a href="/passport-services/" class="block px-4 py-3 rounded-lg bg-white border border-slate-300 hover:border-navy">Passport &amp; Tatkaal desk</a></li>
+            <li><a href="/flights-holidays/" class="block px-4 py-3 rounded-lg bg-white border border-slate-300 hover:border-navy">Flights &amp; custom tours</a></li>
+            <li><a href="https://wa.me/919324666369" target="_blank" rel="noopener noreferrer" class="block px-4 py-3 rounded-lg bg-whatsapp text-white hover:bg-emerald-800">Message us on WhatsApp</a></li>
+        </ul>
+    </main>
+
+    <footer class="bg-navy text-slate-300 py-8 border-t-4 border-gold text-xs">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-3">
+            <p><strong class="text-white font-serif tracking-wide">TRAVERSIQ GLOBAL</strong> • ISP 10, Plot No. 88, Near CNG Pump, Opp. Aditya Birla, Taloja, Panvel, Navi Mumbai, Maharashtra 410208</p>
+            <p class="flex flex-wrap gap-x-5 gap-y-2 font-semibold text-amber-300">
+                <a href="/" class="hover:underline">Overview</a>
+                <a href="/us-visa/" class="hover:underline">US Visa Consultation</a>
+                <a href="/global-visas/" class="hover:underline">Global Visas</a>
+                <a href="/passport-services/" class="hover:underline">Passport Desk</a>
+                <a href="/flights-holidays/" class="hover:underline">Flights &amp; Tours</a>
+                <a href="/privacy-terms/" class="hover:underline">Privacy, Terms &amp; Refunds</a>
+            </p>
+            <p class="text-slate-400">&copy; <span id="year"></span> Traversiq Global. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
